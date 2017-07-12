@@ -12,7 +12,7 @@ NWJS_WIN32_URL="https://dl.nwjs.io/v${NWJS_VERSION}/nwjs-v${NWJS_VERSION}-win-ia
 NWJS_WIN32_FILE="nwjs-v${NWJS_VERSION}-win-ia32"
 
 EXECUTABLE_NAME="Kiss-GUI"
-GUI_VERSION="1.0.13"
+GUI_VERSION=$(grep -Po '"'"version"'"\s*:\s*"\K([^"]*)' ${GUI_LOCATION}/package.json)
 
 echo "Prepare sources"
 if [ ! -d tmp ] ; then
