@@ -1,0 +1,8 @@
+{
+  "name": "Kiss GUI",
+  "description": "Kiss GUI",
+  "version": "2.0.2",
+  "devDependencies": {
+    "grunt-appdmg": "^0.4.0"
+  }
+}
